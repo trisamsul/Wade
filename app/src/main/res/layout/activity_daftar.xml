@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="50dp"
+    android:paddingVertical="40dp"
+    android:background="@color/colorPrimary"
+    tools:context="com.trois.wade.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Daftar Warga"
+            android:textSize="24dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/editText_style"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            style="@style/editText_style"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/editText_style"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etNama"
+            style="@style/editText_style"
+            android:hint="Nama Lengkap"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etAlamat"
+            style="@style/editText_style"
+            android:hint="Alamat"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etKontak"
+            style="@style/editText_style"
+            android:hint="Nomor Kontak"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnDaftar"
+            style="@style/button_style"
+            android:onClick="btnDaftarOnClick"
+            android:text="DAFTAR"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</RelativeLayout>
